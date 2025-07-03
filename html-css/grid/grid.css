@@ -1,0 +1,43 @@
+.line {
+ display: block;
+ width: 1400px;
+ height: 1px;
+ background-color: #333;
+ margin: 50px auto;
+}
+
+.grid__parent {
+  width: 1620px;
+  margin: 30px auto;
+}
+
+.grid-col-4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1120px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.grid-col-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.grid-col-1 {
+  display: flex;
+  width: 1620px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.grid {
+  width: 260px;
+  height: 260px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  margin: 10px;
+}

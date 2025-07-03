@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginForm</title>
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="loginForm.css">
+</head>
+<body>
+   <div class="form__outline">
+     <div class="form__inline">
+        <h2 class="form__title">Sign in to your account</h2>
+        <form class="form">
+            <label class="form__label" for="email">Your email</label>
+            <input class="form__input" id="email" name="email" type="email" placeholder="name@company.com">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" id="password" name="password" type="password">
+
+            <button class="btn">
+                Sign in
+            </button>
+
+            <p class="sub">Don't have an account yet? <a href="#" id="sign">Sign up</a></p>
+        </form>
+     </div>
+   </div>
+
+   <script>
+    const form = document.querySelector('.form');
+    const sign = document.getElementById('sign');
+
+    if(('localStorage' in window) && (window.localStorage !== null)) {
+
+    } else {
+        console.log("you can't use LocalStorage")
+    }
+   </script>
+</body>
+</html>
